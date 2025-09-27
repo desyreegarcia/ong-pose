@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #caa7af; /* cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Principal */
+.Principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho / Navegação */
+.Cabeçalho {
+    background-color: #5a3e8b;
+    color: white;
+    padding: 15px 0;
+}
+
+.Cabeçalho nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.Cabeçalho li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Cabeçalho li:hover {
+    color: #ca7c86;
+}
+
+/* Home */
+.Home {
+    text-align: center;
+    padding: 40px 20px;
+    /* ATUALIZAÇÃO: Gradiente entre #caa7af e #Ca7c86 */
+    background: linear-gradient(to right, #caa7af, #ca7c86);
+    color: white;
+}
+
+.TituloHome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.SubtituloHome p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+/* Imagem da Home */
+.ImagemHome img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #5a3e8b;
+}
+
+/* Seções */
+.Sobre, .ProjetosAcoes, .Historia, .Missao {
+    padding: 40px 20px;
+    background-color: #ac6377;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.TituloSobre h2,
+.Titulo h2,
+.TituloHistoria h2,
+.TituloMissao h2 {
+    color: #5a3e8b;
+    margin-bottom: 15px;
+}
+
+/* Projetos */
+.ProjetosAcoes .projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.imagemProj img {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #5a3e8b;
+}
+
+.textoproj p {
+    margin-bottom: 10px;
+}
+
+/* História */
+.BodyHistoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.TextoHistoria, .topicos, .imagemHistoria {
+    flex: 1;
+    min-width: 250px;
+}
+
+.topicos li {
+    margin-bottom: 5px;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.imagemHistoria img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #5a3e8b;
+}
+
+/* Missão */
+.TextoMissao p {
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #5a3e8b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 5px solid #ca7c86;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+}
