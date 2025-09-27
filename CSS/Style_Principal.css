@@ -42,6 +42,17 @@ body {
     color: #ca7c86;
 }
 
+.Cabeçalho nav a {
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none; 
+    
+    /* Garante que o link use a cor branca do Cabeçalho, não o azul padrão */
+    color: inherit; 
+    
+    /* Opcional: Garante que o tamanho da fonte seja igual ao texto ao redor */
+    font-size: inherit; 
+}
+
 /* Home */
 .Home {
     text-align: center;
