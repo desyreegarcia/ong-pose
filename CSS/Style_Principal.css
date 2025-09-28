@@ -20,33 +20,35 @@ body {
 }
 
 /* Cabeçalho / Navegação */
-.Cabeçalho {
+header {
     background-color: #5a3e8b00;
     color: #5a3e8b;
     padding: 15px 0;
     text-align: right;
-}
-
-.Cabeçalho nav {
     display: flex;
-    justify-content: center;
     gap: 20px;
     list-style: none;
 }
 
-.Cabeçalho li {
-    cursor: pointer;
+nav ul {
+    list-style: none;   /* tira as bolinhas */
+    display: flex;      /* deixa os itens na horizontal */
+    gap: 20px;          /* espaço entre eles */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;  /* tira o sublinhado */
+    color: #6963a3;           /* cor do texto */
+    font-weight: bold;
+    padding: 8px 12px;
     transition: 0.3s;
 }
 
-.Cabeçalho li:hover {
+nav ul li a:hover {
     color: #ca7c86;
-}
-
-.Cabeçalho nav a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */ 
-    color: inherit; /* Garante que o link use a cor branca do Cabeçalho, não o azul padrão */
-    font-size: inherit; /* Opcional: Garante que o tamanho da fonte seja igual ao texto ao redor */
+    border-radius: 5px;
 }
 
 /* Home */

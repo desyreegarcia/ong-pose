@@ -1,0 +1,52 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Principal */
+.Principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho / Navegação */
+header {
+    background-color: #5a3e8b00;
+    color: #5a3e8b;
+    padding: 15px 0;
+    text-align: right;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;   /* tira as bolinhas */
+    display: flex;      /* deixa os itens na horizontal */
+    gap: 20px;          /* espaço entre eles */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;  /* tira o sublinhado */
+    color: #6963a3;           /* cor do texto */
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ca7c86;
+    border-radius: 5px;
+}
