@@ -1,22 +1,26 @@
-name: Deletar Branch Após Merge
+name: Automaticamente Deletar Branch
 
 on:
   pull_request:
     types: [closed]
 
-# ADICIONE ESTA SEÇÃO:
+# ESSENCIAL: Permite que o token temporário delete a branch
 permissions:
-  contents: write # Dá permissão de escrita, necessária para deletar a branch
+  contents: write 
 
 jobs:
-  delete_merged_branch:
-    # A condição deve estar na job para ser avaliada corretamente
-    if: github.event.pull_request.merged == true 
+  delete_branch_on_merge:
+    # A job só roda se o PR foi fechado POR CAUSA de um merge
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     
     steps:
       - name: Deletar a branch de origem mesclada
-        uses: SvanBoxel/delete-merged-branch@main
+        # Action mais robusta para lidar com todos os tipos de merge
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          # A branch a ser deletada
+          branch: ${{ github.event.pull_request.head.ref }}
         env:
-          # O token é injetado, mas a permissão no nível 'job' precisa existir
+          # O token de segurança fornecido pelo GitHub
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
