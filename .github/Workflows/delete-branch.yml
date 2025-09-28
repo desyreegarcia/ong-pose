@@ -1,0 +1,22 @@
+name: Deletar Branch Após Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+# ADICIONE ESTA SEÇÃO:
+permissions:
+  contents: write # Dá permissão de escrita, necessária para deletar a branch
+
+jobs:
+  delete_merged_branch:
+    # A condição deve estar na job para ser avaliada corretamente
+    if: github.event.pull_request.merged == true 
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deletar a branch de origem mesclada
+        uses: SvanBoxel/delete-merged-branch@main
+        env:
+          # O token é injetado, mas a permissão no nível 'job' precisa existir
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
