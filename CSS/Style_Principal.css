@@ -24,6 +24,7 @@ body {
     background-color: #5a3e8b00;
     color: #5a3e8b;
     padding: 15px 0;
+    text-align: right;
 }
 
 .Cabeçalho nav {
@@ -51,7 +52,7 @@ body {
 /* Home */
 .Home {
     text-align: center;
-    background: linear-gradient(to right, #caa7af, #ca7c86);
+    background: linear-gradient(to right, #caa7af, #ac6377);
     color: white;
     display: flex;
     align-items: center;            /* centraliza verticalmente */
@@ -90,7 +91,6 @@ body {
     padding: 40px 20px;
     background-color: #ef8c29;
     margin-top: 20px;
-    border-radius: 10px;
     color: white;
     align-items: center;            /* centraliza verticalmente */
     justify-content: space-between; /* deixa um de cada lado */
