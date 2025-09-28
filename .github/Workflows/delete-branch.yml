@@ -1,20 +1,22 @@
 name: Deletar Branch Após Merge
 
-# O workflow será acionado sempre que um Pull Request for fechado
 on:
   pull_request:
     types: [closed]
 
+# ADICIONE ESTA SEÇÃO:
+permissions:
+  contents: write # Dá permissão de escrita, necessária para deletar a branch
+
 jobs:
   delete_merged_branch:
-    # Esta é a condição principal: a job só rodará se o PR tiver sido realmente mesclado.
-    if: github.event.pull_request.merged == true
+    # A condição deve estar na job para ser avaliada corretamente
+    if: github.event.pull_request.merged == true 
     runs-on: ubuntu-latest
     
     steps:
       - name: Deletar a branch de origem mesclada
-        # Usa a Ação (Action) da comunidade para fazer o trabalho
         uses: SvanBoxel/delete-merged-branch@main
         env:
-          # O GITHUB_TOKEN é fornecido automaticamente pelo GitHub e tem as permissões necessárias.
+          # O token é injetado, mas a permissão no nível 'job' precisa existir
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
