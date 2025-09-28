@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #caa7af; /* cor de fundo suave */
+    background-color: #ffffff; /* cor de fundo suave */
     color: #333;
     line-height: 1.6;
 }
@@ -21,9 +21,10 @@ body {
 
 /* Cabeçalho / Navegação */
 .Cabeçalho {
-    background-color: #5a3e8b;
-    color: white;
+    background-color: #5a3e8b00;
+    color: #5a3e8b;
     padding: 15px 0;
+    text-align: right;
 }
 
 .Cabeçalho nav {
@@ -43,46 +44,59 @@ body {
 }
 
 .Cabeçalho nav a {
-    /* Remove o sublinhado padrão dos links */
-    text-decoration: none; 
-    
-    /* Garante que o link use a cor branca do Cabeçalho, não o azul padrão */
-    color: inherit; 
-    
-    /* Opcional: Garante que o tamanho da fonte seja igual ao texto ao redor */
-    font-size: inherit; 
+    text-decoration: none; /* Remove o sublinhado padrão dos links */ 
+    color: inherit; /* Garante que o link use a cor branca do Cabeçalho, não o azul padrão */
+    font-size: inherit; /* Opcional: Garante que o tamanho da fonte seja igual ao texto ao redor */
 }
 
 /* Home */
 .Home {
     text-align: center;
-    padding: 40px 20px;
-    /* ATUALIZAÇÃO: Gradiente entre #caa7af e #Ca7c86 */
-    background: linear-gradient(to right, #caa7af, #ca7c86);
+    background: linear-gradient(to right, #caa7af, #ac6377);
     color: white;
+    display: flex;
+    align-items: center;            /* centraliza verticalmente */
+    justify-content: space-between; /* deixa um de cada lado */
+    gap: 30px;                      /* espaço entre o texto e a imagem */
+    padding: 40px;
+    width: 100%;
 }
 
-.TituloHome h1 {
+.TituloHome {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    text-align: left;
 }
 
-.SubtituloHome p {
+.SubtituloHome {
     font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
+    margin: 10px auto auto auto;
+    text-align: left;
 }
 
-/* Imagem da Home */
 .ImagemHome img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    border-radius: 10px;
-    border: 3px solid #5a3e8b;
 }
 
 /* Seções */
-.Sobre, .ProjetosAcoes, .Historia, .Missao {
+.Sobre {
+    padding: 20px 50px;
+    margin-top: 20px;
+    color: #366ab0;
+    text-align: center;
+    font-size:medium;
+}
+
+.ProjetosAcoes {
+    padding: 40px 20px;
+    background-color: #ef8c29;
+    margin-top: 20px;
+    color: white;
+    align-items: center;            /* centraliza verticalmente */
+    justify-content: space-between; /* deixa um de cada lado */
+}
+
+.Historia {
     padding: 40px 20px;
     background-color: #ac6377;
     margin-top: 20px;
@@ -90,10 +104,15 @@ body {
     color: white;
 }
 
-.TituloSobre h2,
-.Titulo h2,
-.TituloHistoria h2,
-.TituloMissao h2 {
+.Missao {
+    padding: 40px 20px;
+    background-color: #ac6377;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.TituloSobre, .Titulo h2, .TituloHistoria h2, .TituloMissao h2 {
     color: #5a3e8b;
     margin-bottom: 15px;
 }
@@ -108,12 +127,11 @@ body {
 
 .imagemProj img {
     width: 300px;
-    border-radius: 10px;
-    border: 2px solid #5a3e8b;
 }
 
 .textoproj p {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    max-width: 600px;
 }
 
 /* História */
