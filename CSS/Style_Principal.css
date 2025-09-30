@@ -18,62 +18,55 @@ header {
     background-color: #ffffff; /*fundo branco*/
     color: #5a3e8b; /*cor do texto - roxo*/
     padding: 10px 0; /*margem interna (10px em cima/baixo, 0 nas laterais)*/
-    text-align: right; /*alinhamento do texto - a direita*/
-    display: flex; 
-    gap: 20px;
-    list-style: none; /*verificar pois acho que não precisa estar aqui, apenas no nav*/
+    display: flex; /*organizar os itens de navegação*/
     position: fixed; /*deixa a barra de navegação fixa na tela*/
     width: 100%; /*barra de navegação ocupe toda a largura da tela*/
-    justify-content: flex-end; 
+    justify-content: flex-end; /*alinhamento do texto - a direita*/
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
+    list-style: none; /*tira os marcadores da lista*/
+    display: flex; /*organizar os itens da lista horizontalmente*/
+    gap: 20px; /*espaço entre os itens da lista*/
 }
 
 nav ul li a {
-    text-decoration: none;  /* tira o sublinhado */
-    color: #6963a3;           /* cor do texto */
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: 0.3s;
+    text-decoration: none;  /*tira o sublinhado de link*/
+    color: #6963a3; /* cor do texto */
+    font-weight: bold; /*deixa o texto em negrito*/
+    padding: 8px 12px; /*espaço do botão*/
+    transition: 0.3s; /*deixar uma transição suave*/
 }
 
 nav ul li a:hover {
-    color: #ca7c86;
-    border-radius: 5px;
+    color: #ca7c86; /*cor ao passar o mouse*/
+    font-size: large; /*aumentar a letra ao passar o mouse*/
 }
 
 /* Home */
 .Home {
-    text-align: center;
-    background: linear-gradient(to right, #caa7af, #ac6377);
-    color: white;
+    background: linear-gradient(to right, #caa7af, #ac6377); /*cor do fundo*/
+    color: white; /*cor da escrita*/
     display: flex;
-    align-items: center;            /* centraliza verticalmente */
-    justify-content: space-between; /* deixa um de cada lado */
-    gap: 30px;                      /* espaço entre o texto e a imagem */
-    padding: 50px;
-    padding-top: 70px;
+    justify-content: space-between; /*deixa um de cada lado*/
+    align-items: center; /*centraliza os elementos verticalmente */
+    gap: 50px; /*espaço entre o texto e a imagem*/
+    padding: 70px; /*margem interna*/
     width: 100%;
 }
 
 .TituloHome {
-    font-size: 2.5rem;
-    text-align: left;
+    font-size: 3.0rem; /*tamanho da fonte*/
+    text-align: left; /*alinhamento do texto a esquerda*/
 }
 
 .SubtituloHome {
-    font-size: 1.2rem;
-    margin: 10px auto auto auto;
-    text-align: left;
+    font-size: 1.3rem; /*tamanho da fonte*/
+    text-align: left; /*alinhamento do texto a esquerda*/
 }
 
 .ImagemHome img {
-    max-width: 80%;
-    height: auto;
+    max-width: 80%; /* Largura máxima de 80% do container pai. */
 }
 
 /* Seções */
@@ -85,6 +78,11 @@ nav ul li a:hover {
     font-size:medium;
 }
 
+.TituloSobre {
+    color: #5a3e8b;
+    margin-bottom: 15px;
+}
+
 .ProjetosAcoes {
     padding: 40px 20px;
     background-color: #ef8c29;
@@ -94,26 +92,7 @@ nav ul li a:hover {
     justify-content: space-between; /* deixa um de cada lado */
 }
 
-.Historia {
-    padding: 40px 20px;
-    background-color: #ac6377;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-}
 
-.Missao {
-    padding: 40px 20px;
-    background-color: #ac6377;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-}
-
-.TituloSobre, .Titulo h2, .TituloHistoria h2, .TituloMissao h2 {
-    color: #5a3e8b;
-    margin-bottom: 15px;
-}
 
 /* Projetos */
 .ProjetosAcoes .projeto {
@@ -130,36 +109,6 @@ nav ul li a:hover {
 .textoproj p {
     margin-bottom: 25px;
     max-width: 600px;
-}
-
-/* História */
-.BodyHistoria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.TextoHistoria, .topicos, .imagemHistoria {
-    flex: 1;
-    min-width: 250px;
-}
-
-.topicos li {
-    margin-bottom: 5px;
-    list-style: disc;
-    margin-left: 20px;
-}
-
-.imagemHistoria img {
-    max-width: 100%;
-    border-radius: 10px;
-    border: 2px solid #5a3e8b;
-}
-
-/* Missão */
-.TextoMissao p {
-    text-align: justify;
 }
 
 /* Footer */
