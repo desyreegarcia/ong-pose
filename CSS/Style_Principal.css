@@ -1,85 +1,76 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /*remove a margem externa padrão dos navegadores*/
+    padding: 0; /*remove a margem interna padrão dos navegadores*/
+    box-sizing: border-box; /*É aplicada à área total definida no elemento. Padding e Borda são incluídos dentro do tamanho definido*/
+    font-family: Arial, Helvetica, sans-serif; /*familia de fontes*/
 }
 
+/*Corpo da página*/
 body {
-    background-color: #ffffff; /* cor de fundo suave */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Principal */
-.Principal {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: #ffffff; /*fundo branco*/
+    color: #333; /*cor do texto - cinza*/
+    line-height: 1.6; /*Espaçamento entre linhas*/
 }
 
 /* Cabeçalho / Navegação */
-.Cabeçalho {
-    background-color: #5a3e8b00;
-    color: #5a3e8b;
-    padding: 15px 0;
-    text-align: right;
+header {
+    background-color: #ffffff; /*fundo branco*/
+    color: #5a3e8b; /*cor do texto - roxo*/
+    padding: 10px 0; /*margem interna (10px em cima/baixo, 0 nas laterais)*/
+    display: flex; /*organizar os itens de navegação*/
+    position: fixed; /*deixa a barra de navegação fixa na tela*/
+    width: 100%; /*barra de navegação ocupe toda a largura da tela*/
+    justify-content: flex-end; /*alinhamento do texto - a direita*/
 }
 
-.Cabeçalho nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+nav ul {
+    list-style: none; /*tira os marcadores da lista*/
+    display: flex; /*organizar os itens da lista horizontalmente*/
+    gap: 20px; /*espaço entre os itens da lista*/
 }
 
-.Cabeçalho li {
-    cursor: pointer;
-    transition: 0.3s;
+nav ul li a {
+    text-decoration: none;  /*tira o sublinhado de link*/
+    color: #6963a3; /* cor do texto */
+    font-weight: bold; /*deixa o texto em negrito*/
+    padding: 8px 12px; /*espaço do botão*/
+    transition: 0.3s; /*deixar uma transição suave*/
 }
 
-.Cabeçalho li:hover {
-    color: #ca7c86;
-}
-
-.Cabeçalho nav a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */ 
-    color: inherit; /* Garante que o link use a cor branca do Cabeçalho, não o azul padrão */
-    font-size: inherit; /* Opcional: Garante que o tamanho da fonte seja igual ao texto ao redor */
+nav ul li a:hover {
+    color: #ca7c86; /*cor ao passar o mouse*/
+    font-size: large; /*aumentar a letra ao passar o mouse*/
 }
 
 /* Home */
 .Home {
-    text-align: center;
-    background: linear-gradient(to right, #caa7af, #ac6377);
-    color: white;
+    background: linear-gradient(to right, #caa7af, #ac6377); /*cor do fundo*/
+    color: white; /*cor da escrita*/
     display: flex;
-    align-items: center;            /* centraliza verticalmente */
-    justify-content: space-between; /* deixa um de cada lado */
-    gap: 30px;                      /* espaço entre o texto e a imagem */
-    padding: 40px;
+    justify-content: space-between; /*deixa um de cada lado*/
+    align-items: center; /*centraliza os elementos verticalmente */
+    gap: 50px; /*espaço entre o texto e a imagem*/
+    padding: 70px; /*margem interna*/
     width: 100%;
 }
 
 .TituloHome {
-    font-size: 2.5rem;
-    text-align: left;
+    font-size: 3.0rem; /*tamanho da fonte*/
+    text-align: left; /*alinhamento do texto a esquerda*/
 }
 
 .SubtituloHome {
-    font-size: 1.2rem;
-    margin: 10px auto auto auto;
-    text-align: left;
+    font-size: 1.3rem; /*tamanho da fonte*/
+    text-align: left; /*alinhamento do texto a esquerda*/
 }
 
 .ImagemHome img {
-    max-width: 80%;
-    height: auto;
+    max-width: 80%; /* Largura máxima de 80% do container pai. */
 }
 
 /* Seções */
-.Sobre {
+.Descricao {
     padding: 20px 50px;
     margin-top: 20px;
     color: #366ab0;
@@ -87,93 +78,95 @@ body {
     font-size:medium;
 }
 
-.ProjetosAcoes {
-    padding: 40px 20px;
-    background-color: #ef8c29;
-    margin-top: 20px;
-    color: white;
-    align-items: center;            /* centraliza verticalmente */
-    justify-content: space-between; /* deixa um de cada lado */
-}
-
-.Historia {
-    padding: 40px 20px;
-    background-color: #ac6377;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-}
-
-.Missao {
-    padding: 40px 20px;
-    background-color: #ac6377;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-}
-
-.TituloSobre, .Titulo h2, .TituloHistoria h2, .TituloMissao h2 {
+.TituloDescricao {
     color: #5a3e8b;
     margin-bottom: 15px;
 }
 
-/* Projetos */
-.ProjetosAcoes .projeto {
-    display: flex;
+.ProjetosAcoes {
+    padding: 50px 80px;
+    background-color: #ef8c29;
+    margin-top: 20px;
+    color: white;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* deixa um de cada lado */
+}
+
+.projeto {
+    display: flex; /* deixa um de cada lado */
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+    gap: 30px; /*espaço entre imagem e texto*/
+    align-items: center; /* centraliza verticalmente */
 }
 
 .imagemProj img {
-    width: 300px;
+    width: 300px; /*tamanho da imagem*/
+    margin-top: 30px; /*espaço entre título e imagem*/
 }
 
 .textoproj p {
-    margin-bottom: 25px;
-    max-width: 600px;
+    margin-bottom: 25px; /*espaço entre paragrafos*/
+    max-width: 600px; /*tamanho máximo do conteúdo*/
+    margin-top: 40px; /*margem topo + espaço entre paragrafos*/
 }
 
-/* História */
-.BodyHistoria {
+/* Estilo Geral do Rodapé */
+.rodape {
+    background-color: #5a3e8b; /* Cor de fundo escura, você pode mudar */
+    color: #fff; /* Cor do texto clara */
+    padding: 20px 0px; /* Preenchimento interno */
+    font-family: Arial, sans-serif; /* Fonte */
+}
+
+/* Container principal para alinhar logo e informações lado a lado */
+.rodape-conteudo {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
+    justify-content: space-between; /* Espaça a logo e o bloco de informações */
+    align-items: flex-start; /* Alinha os itens pelo topo */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto 20px; /* Centraliza e adiciona margem inferior */
+    padding-bottom: 20px;
 }
 
-.TextoHistoria, .topicos, .imagemHistoria {
-    flex: 1;
-    min-width: 250px;
+/* Estilo da Logo */
+.rodape-logo img {
+    max-width: 130px; /* Tamanho máximo da logo */
+    height: auto;
+    display: block; /* Garante que a imagem se comporte corretamente */
 }
 
-.topicos li {
-    margin-bottom: 5px;
-    list-style: disc;
-    margin-left: 20px;
+/* Container das Informações de Contato */
+.rodape-informacoes {
+    display: flex;
+    gap: 100px; /* Espaço entre cada bloco de informação (endereço, telefone, email) */
 }
 
-.imagemHistoria img {
-    max-width: 100%;
-    border-radius: 10px;
-    border: 2px solid #5a3e8b;
+/* Estilo para cada item de informação (endereço, telefone, email) */
+.iconeEdescricaoRodape {
+    display: flex;
+    flex-direction: column; /* Coloca o texto abaixo do ícone */
+    align-items: center; /* Centraliza o ícone e o texto */
+    text-align: left;
 }
 
-/* Missão */
-.TextoMissao p {
-    text-align: justify;
+/* Estilo dos Ícones */
+.iconeEdescricaoRodape img {
+    width: 50px; /* largura dos ícones */
+    height: 50px; /* altura dos ícones */
+    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
 }
 
-/* Footer */
-footer {
-    background-color: #5a3e8b;
-    color: white;
+/* Estilo do Texto */
+.iconeEdescricaoRodape p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Direitos Autorais */
+.rodape-direitos {
     text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    border-top: 5px solid #ca7c86;
-}
-
-footer h5 {
-    font-size: 1.2rem;
+    font-size: 0.8em;
+    padding-top: 10px;
+    border-top: 1px solid #555; /* Linha de separação, se quiser manter */
 }
