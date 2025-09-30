@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 /* Seções */
-.Sobre {
+.Descricao {
     padding: 20px 50px;
     margin-top: 20px;
     color: #366ab0;
@@ -78,37 +78,36 @@ nav ul li a:hover {
     font-size:medium;
 }
 
-.TituloSobre {
+.TituloDescricao {
     color: #5a3e8b;
     margin-bottom: 15px;
 }
 
 .ProjetosAcoes {
-    padding: 40px 20px;
+    padding: 50px 80px;
     background-color: #ef8c29;
     margin-top: 20px;
     color: white;
-    align-items: center;            /* centraliza verticalmente */
+    align-items: center; /* centraliza verticalmente */
     justify-content: space-between; /* deixa um de cada lado */
 }
 
-
-
-/* Projetos */
-.ProjetosAcoes .projeto {
-    display: flex;
+.projeto {
+    display: flex; /* deixa um de cada lado */
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+    gap: 30px; /*espaço entre imagem e texto*/
+    align-items: center; /* centraliza verticalmente */
 }
 
 .imagemProj img {
-    width: 300px;
+    width: 300px; /*tamanho da imagem*/
+    margin-top: 30px; /*espaço entre título e imagem*/
 }
 
 .textoproj p {
-    margin-bottom: 25px;
-    max-width: 600px;
+    margin-bottom: 25px; /*espaço entre paragrafos*/
+    max-width: 600px; /*tamanho máximo do conteúdo*/
+    margin-top: 40px; /*margem topo + espaço entre paragrafos*/
 }
 
 /* Estilo Geral do Rodapé */
@@ -131,7 +130,7 @@ nav ul li a:hover {
 
 /* Estilo da Logo */
 .rodape-logo img {
-    max-width: 150px; /* Tamanho máximo da logo */
+    max-width: 130px; /* Tamanho máximo da logo */
     height: auto;
     display: block; /* Garante que a imagem se comporte corretamente */
 }
@@ -143,7 +142,7 @@ nav ul li a:hover {
 }
 
 /* Estilo para cada item de informação (endereço, telefone, email) */
-.info-item {
+.iconeEdescricaoRodape {
     display: flex;
     flex-direction: column; /* Coloca o texto abaixo do ícone */
     align-items: center; /* Centraliza o ícone e o texto */
@@ -151,14 +150,14 @@ nav ul li a:hover {
 }
 
 /* Estilo dos Ícones */
-.info-item img {
-    width: 30px; /* Tamanho dos ícones */
-    height: 30px;
-    margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+.iconeEdescricaoRodape img {
+    width: 50px; /* largura dos ícones */
+    height: 50px; /* altura dos ícones */
+    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
 }
 
 /* Estilo do Texto */
-.info-item p {
+.iconeEdescricaoRodape p {
     margin: 0;
     font-size: 0.9em;
     line-height: 1.4;
