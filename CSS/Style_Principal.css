@@ -43,7 +43,9 @@ nav ul li a:hover {
     font-size: large; /*aumentar a letra ao passar o mouse*/
 }
 
-/* Home */
+/*------ SEÇÕES -------*/
+
+/*-----Home-----*/
 .Home {
     background: linear-gradient(to right, #caa7af, #ac6377); /*cor do fundo*/
     color: white; /*cor da escrita*/
@@ -69,7 +71,7 @@ nav ul li a:hover {
     max-width: 80%; /* Largura máxima de 80% do container pai. */
 }
 
-/* Seções */
+/*-----A ONG-----*/
 .Descricao {
     padding: 20px 50px;
     margin-top: 20px;
@@ -82,6 +84,8 @@ nav ul li a:hover {
     color: #5a3e8b;
     margin-bottom: 15px;
 }
+
+/*-----Projetos e Ações-----*/
 
 .ProjetosAcoes {
     padding: 50px 80px;
@@ -108,6 +112,29 @@ nav ul li a:hover {
     margin-bottom: 25px; /*espaço entre paragrafos*/
     max-width: 600px; /*tamanho máximo do conteúdo*/
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
+}
+
+/*----- Sobre -----*/
+
+.Sobre {
+    padding: 100px 50px;
+    margin-top: 100px;
+    color: white;
+    text-align: left;
+    font-size:medium;
+    background: linear-gradient(#d0520b, #ef8c29,#ecca45);
+}
+
+.Sobre li {
+    list-style: none; /*tira os marcadores da lista*/
+}
+
+.Missao {
+    padding: 40px 20px;
+    background-color: #ac6377;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 /* Estilo Geral do Rodapé */
