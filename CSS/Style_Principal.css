@@ -74,17 +74,57 @@ nav ul li a:hover {
 }
 
 /*-----A ONG-----*/
-.Descricao {
-    padding: 20px 50px;
-    margin-top: 20px;
-    color: #366ab0;
-    text-align: center;
-    font-size:medium;
-}
-
 .TituloDescricao {
     color: #5a3e8b;
     margin-bottom: 15px;
+}
+
+.ong {
+    display: flex; /* coloca os elementos lado a lado */
+    align-items: center; /* alinha os itens verticalmente*/
+    justify-content: center; /* centraliza tudo horizontalmente */
+    padding: 100px; /* espaço interno da seção */
+    background: url("/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
+    background-size: cover; /*imagem de fundo ocupar toda a área */
+
+    text-align: center; /* centraliza o texto dentro do bloco de conteúdo */
+    flex-wrap: wrap; /* permite que os elementos "quebrem" para baixo em telas pequenas */
+}
+
+.ong h2 {
+    color: #5a3e8b; /* cor roxa para o título */
+    margin-bottom: 15px; /* espaço abaixo do título */
+}
+
+.ong p {
+    margin-bottom: 12px; /* espaço entre os parágrafos */
+    font-size: 1.2rem; /* aumenta levemente o tamanho da fonte */
+    color: #1d1d70; /* cor padrão do texto */
+    -webkit-text-stroke: 0.5px #516583; /* Espessura e cor da borda */
+}
+    
+.conteudo-ong {
+    max-width: 700px; /* limita a largura máxima do texto para não ficar muito extenso */
+}
+
+/*----- Sobre -----*/
+.Sobre {
+    display: flex; /* coloca lado a lado */
+    gap: 20px; /* espaço entre as caixas */
+    justify-content: center; /* centraliza */
+    padding: 40px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    background-color: #7fabb8;
+}
+
+.TextoSobre {
+    background-color: #ffffff; /* fundo branco */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
+    width: 45%; /* cada caixa ocupa metade da tela */
+    min-width: 300px; /* garante que não fique muito pequeno */
 }
 
 /*-----Projetos e Ações-----*/
@@ -116,26 +156,6 @@ nav ul li a:hover {
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
 }
 
-/*----- Sobre -----*/
-
-.Sobre {
-    display: flex; /* coloca lado a lado */
-    gap: 20px; /* espaço entre as caixas */
-    justify-content: center; /* centraliza */
-    padding: 40px;
-    flex-wrap: wrap; /* permite quebrar em telas pequenas */
-    background-color: #7fabb8;
-}
-
-.TextoSobre {
-    background-color: #ffffff; /* fundo branco */
-    color: #333;
-    padding: 20px;
-    border-radius: 10px; /* cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
-    width: 45%; /* cada caixa ocupa metade da tela */
-    min-width: 300px; /* garante que não fique muito pequeno */
-}
 /* Estilo Geral do Rodapé */
 .rodape {
     background-color: #5a3e8b; /* Cor de fundo escura, você pode mudar */
