@@ -84,7 +84,7 @@ nav ul li a:hover {
     align-items: center; /* alinha os itens verticalmente*/
     justify-content: center; /* centraliza tudo horizontalmente */
     padding: 100px; /* espaço interno da seção */
-    background: url("/ong-pose/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
+    background: url("/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
     background-size: cover; /*imagem de fundo ocupar toda a área */
 
     text-align: center; /* centraliza o texto dentro do bloco de conteúdo */
@@ -154,6 +154,32 @@ nav ul li a:hover {
     margin-bottom: 25px; /*espaço entre paragrafos*/
     max-width: 600px; /*tamanho máximo do conteúdo*/
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
+}
+
+/*----- Contato -----*/
+.Contato {
+    display: flex; /* coloca lado a lado */
+    gap: 20px; /* espaço entre as caixas */
+    justify-content: center; /* centraliza */
+    padding: 100px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    background:linear-gradient(#caa7af)
+}
+
+.TextoContato {
+    background-color: #ac6377; /* fundo branco */
+    color: #ffffff;
+    padding: 100px;
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
+    width: 45%; /* cada caixa ocupa metade da tela */
+    min-width: 300px; /* garante que não fique muito pequeno */
+}
+
+.localizacao{
+    color: #ffffff;
+    max-width: 600px; /*tamanho máximo do conteúdo*/
+    align-items:left;
 }
 
 /* Estilo Geral do Rodapé */
