@@ -84,7 +84,7 @@ nav ul li a:hover {
     align-items: center; /* alinha os itens verticalmente*/
     justify-content: center; /* centraliza tudo horizontalmente */
     padding: 100px; /* espaço interno da seção */
-    background: url("/ong-pose/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
+    background: url("/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
     background-size: cover; /*imagem de fundo ocupar toda a área */
 
     text-align: center; /* centraliza o texto dentro do bloco de conteúdo */
@@ -156,7 +156,49 @@ nav ul li a:hover {
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
 }
 
-/* Estilo Geral do Rodapé */
+/*----- Contato -----*/
+.Contato {
+    display: flex; /* coloca lado a lado */
+    gap: 20px; /* espaço entre as caixas */
+    justify-content: center; /* centraliza */
+    padding: 100px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    background:linear-gradient(#caa7af);
+}
+
+.TextoContato {
+    background-color: #ffffff; /* fundo branco */
+    color: #ac6377;
+    padding: 40px;
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
+    width: 45%; /* cada caixa ocupa metade da tela */
+    min-width: 300px; /* garante que não fique muito pequeno */
+    font-size: 1.2rem; /* aumenta levemente o tamanho da fonte */
+}
+
+.TextoContato a {
+    background-color: #ffffff; /* fundo branco */
+    color: #ac6377;
+    text-decoration: none;  /*tira o sublinhado de link*/
+
+}.TextoContato a:hover {
+    color: #46355c;
+    font-size: 1.3rem; /*aumentar a letra ao passar o mouse*/
+}
+
+.localizacao{
+    color: #ffffff;
+    max-width: 600px; /*tamanho máximo do conteúdo*/
+    align-items:left;
+}
+
+.localizacao iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*-----Rodapé-----*/
 .rodape {
     background-color: #5a3e8b; /* Cor de fundo escura, você pode mudar */
     color: #fff; /* Cor do texto clara */
@@ -164,7 +206,6 @@ nav ul li a:hover {
     font-family: Arial, sans-serif; /* Fonte */
 }
 
-/* Container principal para alinhar logo e informações lado a lado */
 .rodape-conteudo {
     display: flex;
     justify-content: space-between; /* Espaça a logo e o bloco de informações */
@@ -174,20 +215,17 @@ nav ul li a:hover {
     padding-bottom: 20px;
 }
 
-/* Estilo da Logo */
 .rodape-logo img {
     max-width: 130px; /* Tamanho máximo da logo */
     height: auto;
     display: block; /* Garante que a imagem se comporte corretamente */
 }
 
-/* Container das Informações de Contato */
 .rodape-informacoes {
     display: flex;
     gap: 100px; /* Espaço entre cada bloco de informação (endereço, telefone, email) */
 }
 
-/* Estilo para cada item de informação (endereço, telefone, email) */
 .iconeEdescricaoRodape {
     display: flex;
     flex-direction: column; /* Coloca o texto abaixo do ícone */
@@ -195,21 +233,18 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* Estilo dos Ícones */
 .iconeEdescricaoRodape img {
     width: 50px; /* largura dos ícones */
     height: 50px; /* altura dos ícones */
     margin-bottom: 10px; /* Espaço entre o ícone e o texto */
 }
 
-/* Estilo do Texto */
 .iconeEdescricaoRodape p {
     margin: 0;
     font-size: 0.9em;
     line-height: 1.4;
 }
 
-/* Direitos Autorais */
 .rodape-direitos {
     text-align: center;
     font-size: 0.8em;
