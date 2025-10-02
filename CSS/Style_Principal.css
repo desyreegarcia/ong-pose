@@ -119,26 +119,23 @@ nav ul li a:hover {
 /*----- Sobre -----*/
 
 .Sobre {
-    padding: 100px 50px;
-    margin-top: 100px;
-    color: white;
-    text-align: left;
-    font-size:medium;
-    background: linear-gradient(#d0520b, #ef8c29,#ecca45);
+    display: flex; /* coloca lado a lado */
+    gap: 20px; /* espaço entre as caixas */
+    justify-content: center; /* centraliza */
+    padding: 40px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    background-color: #7fabb8;
 }
 
-.Sobre li {
-    list-style: none; /*tira os marcadores da lista*/
+.TextoSobre {
+    background-color: #ffffff; /* fundo branco */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
+    width: 45%; /* cada caixa ocupa metade da tela */
+    min-width: 300px; /* garante que não fique muito pequeno */
 }
-
-.Missao {
-    padding: 40px 20px;
-    background-color: #ac6377;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-}
-
 /* Estilo Geral do Rodapé */
 .rodape {
     background-color: #5a3e8b; /* Cor de fundo escura, você pode mudar */
