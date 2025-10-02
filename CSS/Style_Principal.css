@@ -135,13 +135,17 @@ nav ul li a:hover {
     color: white;
     align-items: center; /* centraliza verticalmente */
     justify-content: space-between; /* deixa um de cada lado */
+    margin-left: 40px; /*remover margem lateral*/
+    margin-right: 40px; /*remover margem lateral*/
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 
 .projeto {
     display: flex; /* deixa um de cada lado */
-    flex-wrap: wrap;
     gap: 30px; /*espaço entre imagem e texto*/
     align-items: center; /* centraliza verticalmente */
+
 }
 
 .imagemProj img {
@@ -186,46 +190,33 @@ nav ul li a:hover {
     font-size: 1.3rem; /*aumentar a letra ao passar o mouse*/
 }
 
-.localizacao{
-    color: #ffffff;
-    max-width: 600px; /*tamanho máximo do conteúdo*/
-    align-items:left;
-}
-
-
-.localizacao iframe {
-    width: 100%;
-    border-radius: 10px;
-}
-
 /*-----Contribuicao-----*/
 .Contribuicao {
-    padding: 50px 80px;
+    padding: 50px 50px;
     background: #669b4b;
     margin-top: 50px;
     color: white;
     align-items: center; /* centraliza verticalmente */
-    justify-content: space-between; /* deixa um de cada lado */
     text-align: center;
 }
 
 .TextoContribuicao {
-    margin-top: 50px;
+    margin-top: 50px;/*margem externa, entre texto e caixa*/
     display: flex; /* deixa um de cada lado */
-    flex-wrap: wrap;
     gap: 30px; /*espaço entre imagem e texto*/
-    align-items: center; /* centraliza verticalmente */
+    align-items: center; /*centraliza verticalmente*/
     background: #ffffff;
-    border-radius: 15%;
+    border-radius: 15% / 30%; /*raio horizontal / raio vertical*/
     color: #669b4b;
-    width: 50%; /* cada caixa ocupa metade da tela */
+    width: 50%; /*tamanho da caixa*/
     text-align: left;
+    margin-left: auto; /*centralizar horizontalmente*/
+    margin-right: auto; /*centralizar horizontalmente*/
     padding: 50px;
 }
 
 .TextoContribuicao img {
     width: 150px; /*tamanho da imagem*/
-    margin-top: 30px; /*espaço entre título e imagem*/
 }
 
 /*-----Rodapé-----*/
