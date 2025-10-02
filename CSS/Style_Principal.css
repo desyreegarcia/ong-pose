@@ -131,12 +131,11 @@ nav ul li a:hover {
 .ProjetosAcoes {
     padding: 50px 80px;
     background: linear-gradient(#ef8c29,#d0520b);
-    margin-top: 20px;
     color: white;
     align-items: center; /* centraliza verticalmente */
     justify-content: space-between; /* deixa um de cada lado */
-    margin-left: 40px; /*remover margem lateral*/
-    margin-right: 40px; /*remover margem lateral*/
+    max-width: 1000px;
+    margin: auto auto; /* Centraliza a div na página (necessário se tiver um 'max-width') */
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
@@ -145,7 +144,6 @@ nav ul li a:hover {
     display: flex; /* deixa um de cada lado */
     gap: 30px; /*espaço entre imagem e texto*/
     align-items: center; /* centraliza verticalmente */
-
 }
 
 .imagemProj img {
@@ -157,6 +155,39 @@ nav ul li a:hover {
     margin-bottom: 25px; /*espaço entre paragrafos*/
     max-width: 600px; /*tamanho máximo do conteúdo*/
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
+}
+
+/*-----Parcerias-----*/
+.area-parcerias {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0; /* Cinza bem claro */
+    border: 1px solid #ccc; /* Borda cinza um pouco mais escura */
+    border-radius: 8px;
+    max-width: 800px;
+    /* Centraliza a div na página (necessário se tiver um 'max-width') */
+    margin: 40px auto;
+    /* Adiciona uma sombra suave para dar profundidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.area-parcerias p {
+    /* Define o tamanho da fonte */
+    font-size: 1.1em;
+    /* Adiciona uma margem inferior para separar os parágrafos */
+    margin-bottom: 15px;
+    /* Define a cor do texto principal */
+    color: #333;
+}
+
+.area-parcerias p:last-child {
+    /* Estiliza o aviso de "em construção" */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #a00; /* Cor vermelha para chamar a atenção para o aviso */
+    font-size: 1.2em; /* Deixa a fonte um pouco maior */
+    margin-top: 20px; /* Aumenta o espaço acima deste parágrafo */
+    /* Remove a margem inferior do último parágrafo */
+    margin-bottom: 0;
 }
 
 /*----- Contato -----*/
