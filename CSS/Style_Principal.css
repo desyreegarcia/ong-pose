@@ -128,7 +128,6 @@ nav ul li a:hover {
 }
 
 /*-----Projetos e Ações-----*/
-
 .ProjetosAcoes {
     padding: 50px 80px;
     background: linear-gradient(#ef8c29,#d0520b);
@@ -193,9 +192,40 @@ nav ul li a:hover {
     align-items:left;
 }
 
+
 .localizacao iframe {
     width: 100%;
     border-radius: 10px;
+}
+
+/*-----Contribuicao-----*/
+.Contribuicao {
+    padding: 50px 80px;
+    background: #669b4b;
+    margin-top: 50px;
+    color: white;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* deixa um de cada lado */
+    text-align: center;
+}
+
+.TextoContribuicao {
+    margin-top: 50px;
+    display: flex; /* deixa um de cada lado */
+    flex-wrap: wrap;
+    gap: 30px; /*espaço entre imagem e texto*/
+    align-items: center; /* centraliza verticalmente */
+    background: #ffffff;
+    border-radius: 15%;
+    color: #669b4b;
+    width: 50%; /* cada caixa ocupa metade da tela */
+    text-align: left;
+    padding: 50px;
+}
+
+.TextoContribuicao img {
+    width: 150px; /*tamanho da imagem*/
+    margin-top: 30px; /*espaço entre título e imagem*/
 }
 
 /*-----Rodapé-----*/
