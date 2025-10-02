@@ -18,6 +18,8 @@ header {
     background-color: #ffffff; /*fundo branco*/
     color: #5a3e8b; /*cor do texto - roxo*/
     padding: 10px 0; /*margem interna (10px em cima/baixo, 0 nas laterais)*/
+    top: 0;
+    left: 0;
     display: flex; /*organizar os itens de navegação*/
     position: fixed; /*deixa a barra de navegação fixa na tela*/
     width: 100%; /*barra de navegação ocupe toda a largura da tela*/
@@ -43,7 +45,9 @@ nav ul li a:hover {
     font-size: large; /*aumentar a letra ao passar o mouse*/
 }
 
-/* Home */
+/*------ SEÇÕES -------*/
+
+/*-----Home-----*/
 .Home {
     background: linear-gradient(to right, #caa7af, #ac6377); /*cor do fundo*/
     color: white; /*cor da escrita*/
@@ -69,7 +73,7 @@ nav ul li a:hover {
     max-width: 80%; /* Largura máxima de 80% do container pai. */
 }
 
-/* Seções */
+/*-----A ONG-----*/
 .Descricao {
     padding: 20px 50px;
     margin-top: 20px;
@@ -83,9 +87,11 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+/*-----Projetos e Ações-----*/
+
 .ProjetosAcoes {
     padding: 50px 80px;
-    background-color: #ef8c29;
+    background: linear-gradient(#ef8c29,#d0520b);
     margin-top: 20px;
     color: white;
     align-items: center; /* centraliza verticalmente */
@@ -100,7 +106,7 @@ nav ul li a:hover {
 }
 
 .imagemProj img {
-    width: 300px; /*tamanho da imagem*/
+    width: 400px; /*tamanho da imagem*/
     margin-top: 30px; /*espaço entre título e imagem*/
 }
 
@@ -110,6 +116,26 @@ nav ul li a:hover {
     margin-top: 40px; /*margem topo + espaço entre paragrafos*/
 }
 
+/*----- Sobre -----*/
+
+.Sobre {
+    display: flex; /* coloca lado a lado */
+    gap: 20px; /* espaço entre as caixas */
+    justify-content: center; /* centraliza */
+    padding: 40px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    background-color: #7fabb8;
+}
+
+.TextoSobre {
+    background-color: #ffffff; /* fundo branco */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra */
+    width: 45%; /* cada caixa ocupa metade da tela */
+    min-width: 300px; /* garante que não fique muito pequeno */
+}
 /* Estilo Geral do Rodapé */
 .rodape {
     background-color: #5a3e8b; /* Cor de fundo escura, você pode mudar */
