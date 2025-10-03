@@ -28,7 +28,7 @@ Repositório do site da ONG Pose da Liberdade, desenvolvido em **HTML e CSS**.
 |   ├──QRCode.jpeg
 ├── Contato.html
 ├── Contribuicao.html
-├── Index.html
+├── index.html
 ├── Parcerias.html
 ├── Projetos.html
 └── README.md
