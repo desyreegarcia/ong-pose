@@ -84,7 +84,7 @@ nav ul li a:hover {
     align-items: center; /* alinha os itens verticalmente*/
     justify-content: center; /* centraliza tudo horizontalmente */
     padding: 100px; /* espaço interno da seção */
-    background: url("/ong-pose/Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
+    background: url("/../Images/fundo ong.png") center; /* define a imagem de fundo sem repetir, centralizada */
     background-size: cover; /*imagem de fundo ocupar toda a área */
 
     text-align: center; /* centraliza o texto dentro do bloco de conteúdo */
